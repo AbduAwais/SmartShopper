@@ -29,6 +29,6 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
 	<key>NSCameraUsageDescription</key>
-	<string>This app requires access to the camera to scan barcodes. </string>
+	<string>This app requires access to the camera to scan barcodes</string>
 </dict>
 </plist>
