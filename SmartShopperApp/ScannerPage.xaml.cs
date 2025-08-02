@@ -62,4 +62,4 @@ public partial class ScannerPage : ContentPage
             resultLabel.Text = $"Simulated Scan: {fakeBarcode}";
         }
     }
-} // 👈 make sure this closing brace is there
+} // 👈 make sure this closing brace is theress
