@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.Maui"
              x:Class="SmartShopperApp.ScannerPage"
              Title="Scan Product">
 
     <Grid>
-        <zxing:CameraBarcodeReaderView x:Name="CameraBarcodeReader"
-                                       HorizontalOptions="FillAndExpand"
-                                       VerticalOptions="FillAndExpand"
-                                       BarcodesDetected="OnBarcodesDetected" />
-        
+        <!-- Result label -->
         <Label x:Name="resultLabel"
                Text="Scan a barcode..."
                FontSize="20"
@@ -18,6 +13,14 @@
                TextColor="White"
                HorizontalOptions="Center"
                VerticalOptions="End"
-               Margin="0,0,0,40" />
+               Margin="0,0,0,80" />
+
+        <!-- Fake scan button -->
+        <Button x:Name="FakeScanButton"
+                Text="Simulate Scan"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                IsVisible="False"
+                Clicked="OnFakeScanClicked" />
     </Grid>
 </ContentPage>
