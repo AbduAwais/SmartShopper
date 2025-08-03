@@ -1,4 +1,6 @@
-﻿namespace SmartShopperApp;
+﻿using Microsoft.Maui.Controls;
+
+namespace SmartShopperApp;
 
 public partial class App : Application
 {
